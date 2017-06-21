@@ -1,0 +1,18 @@
+<dtmf>
+    <operator name="all">
+        <boost>1</boost>
+        <threshold>20</threshold>
+        <multiplying_factor>35</multiplying_factor>
+
+    </operator>
+    <operator name="!DEA">
+        <boost>1</boost>
+        <multiplying_factor>35</multiplying_factor>
+        <threshold>20</threshold>
+    </operator>
+    <operator name="airtel">
+        <boost>1</boost>
+        <multiplying_factor>85</multiplying_factor>
+        <threshold>10</threshold>
+    </operator>
+</dtmf>

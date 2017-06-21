@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.mysettingspreferencefragment">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="mcc|mnc"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.foo.ACTION1" />
+                <action android:name="com.example.ALARM" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ViewPagerTest"
+            android:label="@string/title_activity_view_pager_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PagerTabStripTest"
+            android:label="@string/title_activity_tab_layout_normal"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name=".ActionBarTabTest"
+            android:label="@string/title_activity_action_bar_tab_test"
+            android:theme="@style/Theme.DeviceDefault.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActionBarTabTestSecond"
+            android:label="@string/title_activity_action_bar_tab_test_second"
+            android:theme="@style/Theme.DeviceDefault.Base" />
+        <activity
+            android:name=".SettingsActivityStudio"
+            android:label="@string/title_activity_settings_activity_studio" />
+        <activity
+            android:name=".AddressActivity"
+            android:label="@string/title_activity_address"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ViewPagerSlidingTabStrip"
+            android:label="@string/title_activity_view_pager_tab_strip"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ViewPagerSlidingTabStripTwo"
+            android:label="@string/title_activity_view_pager_tab_strip_two"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".CustomTile"
+            android:icon="@drawable/ic_search_api_holo_light"
+            android:label="@string/action_settings"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">>
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+
+        </service>
+    </application>
+
+</manifest>

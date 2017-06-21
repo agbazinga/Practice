@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.DeviceDefault.Base" parent="android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarTabStyle">@style/MyTabTheme</item>
+        <item name="android:actionBarTabTextStyle">@style/MyTabTextStyle</item>
+        <item name="android:actionBarStyle">@style/MyActionBarTheme</item>
+    </style>
+
+    <style name="MyActionBarTheme" parent="android:Widget.DeviceDefault.Light.ActionBar">
+
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+    </style>
+
+    <style name="DefaultAppTheme" parent="android:style/Theme.DeviceDefault.Light" />
+
+    <style name="MyTabTheme" parent="android:Widget.DeviceDefault.Light.ActionBar.TabView">
+
+    </style>
+
+    <style name="MyTabTextStyle" parent="android:Widget.DeviceDefault.Light.ActionBar.TabText">
+        <item name="android:maxWidth">99dp</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="TextStyleTest" parent="AppTheme">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+</resources>

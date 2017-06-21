@@ -1,0 +1,212 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:2:1-100:12
+	package
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:3:5-60
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:5:5-76
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:5:22-73
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:6:5-73
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:6:22-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:7:22-65
+uses-permission#android.permission.ACCESS_NOTIFICATION_POLICY
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:8:5-85
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:8:22-82
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#com.android.alarm.permission.SET_ALARM
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:12:5-78
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:12:22-75
+application
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:14:5-98:19
+MERGED from [com.android.support:design:23.4.0] C:\Users\Bazinga\.android\build-cache\d45098fab80f8fc811360e31cb07876216fedc55\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Bazinga\.android\build-cache\2fb212bf61197f8b472a331e0873d51bf375f2de\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Bazinga\.android\build-cache\10d7df810a8c8d8bfff54efb2f64264bebc19254\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Bazinga\.android\build-cache\e3048f38a1feee7348a9804910a6f20a60dc0acd\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Bazinga\.android\build-cache\b9e086f543e1435f86b9704e45f2a6fb0e7e56e5\output\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:17:9-41
+	android:supportsRtl
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:18:9-35
+	android:allowBackup
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:15:9-35
+	android:icon
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:16:9-43
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:19:9-40
+activity#com.example.user.mysettingspreferencefragment.MainActivity
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:20:9-30:20
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:23:13-45
+	android:configChanges
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:22:13-44
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:24:13-56
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:21:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:28:27-74
+activity#com.example.user.mysettingspreferencefragment.SettingsActivity
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:31:9-34:59
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:33:13-37
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:32:13-45
+activity#com.example.user.mysettingspreferencefragment.About
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:35:9-38:59
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:37:13-57
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:38:13-56
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:36:13-34
+receiver#com.example.user.mysettingspreferencefragment.MyReceiver
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:40:9-48:20
+	android:exported
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:42:13-36
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:41:13-39
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE+com.example.ALARM+com.example.foo.ACTION1
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:43:13-47:29
+action#com.example.foo.ACTION1
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:44:17-66
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:44:25-63
+action#com.example.ALARM
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:45:17-60
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:45:25-57
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:46:25-76
+activity#com.example.user.mysettingspreferencefragment.ViewPagerTest
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:50:9-53:59
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:52:13-67
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:53:13-56
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:51:13-42
+activity#com.example.user.mysettingspreferencefragment.PagerTabStripTest
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:54:9-57:72
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:56:13-69
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:57:13-69
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:55:13-46
+activity#com.example.user.mysettingspreferencefragment.ActionBarTabTest
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:58:9-65:20
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:60:13-71
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:61:13-60
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:59:13-45
+intent-filter#android.intent.action.MAIN
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:62:13-64:29
+activity#com.example.user.mysettingspreferencefragment.ActionBarTabTestSecond
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:66:9-69:63
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:68:13-78
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:69:13-60
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:67:13-51
+activity#com.example.user.mysettingspreferencefragment.SettingsActivityStudio
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:70:9-72:79
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:72:13-76
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:71:13-51
+activity#com.example.user.mysettingspreferencefragment.AddressActivity
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:73:9-76:59
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:75:13-59
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:76:13-56
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:74:13-44
+activity#com.example.user.mysettingspreferencefragment.ViewPagerSlidingTabStrip
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:78:9-81:59
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:80:13-72
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:81:13-56
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:79:13-53
+activity#com.example.user.mysettingspreferencefragment.ViewPagerSlidingTabStripTwo
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:83:9-86:59
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:85:13-76
+	android:theme
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:86:13-56
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:84:13-56
+service#com.example.user.mysettingspreferencefragment.CustomTile
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:88:9-97:19
+	android:label
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:91:13-52
+	android:permission
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:92:13-77
+	android:icon
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:90:13-62
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:89:13-39
+intent-filter#android.service.quicksettings.action.QS_TILE
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:93:13-95:29
+action#android.service.quicksettings.action.QS_TILE
+ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:94:17-87
+	android:name
+		ADDED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml:94:25-84
+uses-sdk
+INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:23.4.0] C:\Users\Bazinga\.android\build-cache\d45098fab80f8fc811360e31cb07876216fedc55\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Bazinga\.android\build-cache\1a18e84e9aeda2a33516349287454a7b8deb3b7d\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Bazinga\.android\build-cache\2fb212bf61197f8b472a331e0873d51bf375f2de\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Bazinga\.android\build-cache\10d7df810a8c8d8bfff54efb2f64264bebc19254\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Bazinga\.android\build-cache\e3048f38a1feee7348a9804910a6f20a60dc0acd\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Bazinga\.android\build-cache\b9e086f543e1435f86b9704e45f2a6fb0e7e56e5\output\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Bazinga\.android\build-cache\2fb212bf61197f8b472a331e0873d51bf375f2de\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_Workspace_Studio\MySettingsPreferenceFragment\app\src\main\AndroidManifest.xml

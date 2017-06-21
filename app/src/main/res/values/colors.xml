@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fragmentOneColor">#CECEFF</color>
+    <color name="fragmentTwoColor">#FFAFF2</color>
+    <color name="fragmentThreeColor">#CE93D8</color>
+    <color name="nested_fragment_one_color">#fde111</color>
+    <color name="nested_fragment_two_color">#ade333</color>
+    <color name="nested_fragment_three_color">#5f1F55</color>
+    <color name="page_indicator_dim">#40585858</color>
+    <color name="page_indicator">#ff585858</color>
+    <color name="action_bar_custom_color">#C4E311</color>
+
+    <color name="tab_selected_underline_color">@color/fragmentTwoColor</color>
+    <color name="tab_text_color_selected">@color/tab_selected_underline_color</color>
+    <color name="tab_text_color_normal">#CC767676</color>
+
+</resources>
