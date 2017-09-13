@@ -9,6 +9,9 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -32,9 +35,9 @@ public class ActionBarTabTest extends FragmentActivity implements IntroOne.OnFra
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 //        actionBar.setDisplayOptions(1, ActionBar.DISPLAY_SHOW_TITLE);
 
-        actionBar.addTab(actionBar.newTab().setText("NOTIFICATIONS").setTabListener(this),false);
-        actionBar.addTab(actionBar.newTab().setText("SMART REPLY").setTabListener(this),false);
-        actionBar.addTab(actionBar.newTab().setText("MY RIDES EXTENDED").setTabListener(this),false);
+        actionBar.addTab(actionBar.newTab().setText("NOTIFICATIONS").setTabListener(this), false);
+        actionBar.addTab(actionBar.newTab().setText("SMART REPLY").setTabListener(this), false);
+        actionBar.addTab(actionBar.newTab().setText("MY RIDES EXTENDED").setTabListener(this), false);
 
         mViewPagerTab.setOnPageChangeListener(mViewPagerOnChangeListener);
 
@@ -48,6 +51,28 @@ public class ActionBarTabTest extends FragmentActivity implements IntroOne.OnFra
     @Override
     public void onFragmentInteraction(Uri uri) {
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        Log.d("ABHI", "ActionBarTabTest : onCreateOptionsMenu");
+        return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        Log.d("ABHI", "ActionBarActivity : onPrepareOptionsMenu");
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Toast.makeText(this, "back key long press ", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        return super.onKeyLongPress(keyCode, event);
     }
 
     ViewPager.OnPageChangeListener mViewPagerOnChangeListener = new ViewPager.OnPageChangeListener() {
@@ -73,6 +98,7 @@ public class ActionBarTabTest extends FragmentActivity implements IntroOne.OnFra
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
 
         Toast.makeText(getApplicationContext(), "Tab Position : " + tab.getPosition(), Toast.LENGTH_SHORT).show();
+        invalidateOptionsMenu();
         mViewPagerTab.setCurrentItem(tab.getPosition());
 
 //        if (tab.getPosition() == 1) {

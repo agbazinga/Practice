@@ -1,6 +1,8 @@
 package com.example.user.mysettingspreferencefragment;
 
+import android.app.NotificationManager;
 import android.os.Bundle;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;

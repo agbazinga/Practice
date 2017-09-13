@@ -175,6 +175,7 @@ public class ViewPagerTabs extends FrameLayout implements ViewPager.OnPageChange
         setOutlineProvider(VIEW_BOUNDS_OUTLINE_PROVIDER);
     }
 
+
     public void setViewPager(ViewPager viewPager) {
         mPager = viewPager;
         mPager.addOnPageChangeListener(this);

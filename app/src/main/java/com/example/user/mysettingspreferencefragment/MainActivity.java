@@ -302,6 +302,7 @@ public class MainActivity extends AppCompatActivity implements TestListener {
     @Override
     protected void onResume() {
         super.onResume();
+
         Log.d("BAZY", "onResume Called");
         registerReceiver(testReceiver, testIntentFilter);
         TestListenerController.addToListener(this);
@@ -356,6 +357,7 @@ public class MainActivity extends AppCompatActivity implements TestListener {
             }
         }
     }
+
 
     private void createAlarm(String message, int hours, int minutes) {
         Intent alarmIntent = new Intent(AlarmClock.ACTION_SET_ALARM)
