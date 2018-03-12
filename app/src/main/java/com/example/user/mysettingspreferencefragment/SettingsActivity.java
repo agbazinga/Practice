@@ -1,6 +1,9 @@
 package com.example.user.mysettingspreferencefragment;
 
 import android.app.NotificationManager;
+import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +26,9 @@ public class SettingsActivity extends AppCompatActivity implements SettingsFragm
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mToolbar.setTitle("Settings Toolbar");
         setSupportActionBar(mToolbar);
+
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getFragmentManager().beginTransaction().replace(R.id.settings_content_separate, new SettingsFragment()).commit();
     }
 
@@ -36,7 +41,17 @@ public class SettingsActivity extends AppCompatActivity implements SettingsFragm
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
-            Toast.makeText(this, "Volume Down", Toast.LENGTH_SHORT).show();
+
+            Intent intent = new Intent();
+            try {
+                intent.setComponent(new ComponentName("com.example.bazinga.samplelist", "com.example.bazinga.samplelist.ui.activity.StandardActivity"));
+               // intent.setAction("com.example.bazinga.samplelist.action.LAUNCH");
+                startActivity(intent);
+                Toast.makeText(this, "Volume Down", Toast.LENGTH_SHORT).show();
+            } catch (ActivityNotFoundException e) {
+                Toast.makeText(this, "ActivityNotFoundException", Toast.LENGTH_SHORT).show();
+            }
+
         }
         return super.onKeyDown(keyCode, event);
     }

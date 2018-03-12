@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.BitmapFactory;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.PowerManager;
@@ -180,14 +181,14 @@ public class MainActivity extends AppCompatActivity implements TestListener {
                     e.printStackTrace();
                 }
 
-                param.setParamFromXML(this, "airtel");
+                //param.setParamFromXML(this, "airtel");
 
                 mTextview.setText("Parsed : " + param.getBoost() + " " + param.getMultiplyingFactor() + " " + param.getThreshold());
 
-                mContext.setTheme(R.style.DefaultAppTheme);
+                //    mContext.setTheme(R.style.DefaultAppTheme);
                 Toast.makeText(mContext, "Button clicked :" + uid, Toast.LENGTH_SHORT).show();
-                mSearchEditText.setCursorVisible(false);
-                mSearchView.clearFocus();
+                //    mSearchEditText.setCursorVisible(false);
+                //  mSearchView.clearFocus();
 
                 DisplayMetrics dm = getResources().getDisplayMetrics();
 
@@ -208,7 +209,7 @@ public class MainActivity extends AppCompatActivity implements TestListener {
 
                 //sendBroadcast(new Intent("com.example.foo.ACTION1"));
 
-                //buildNotification();
+                buildNotification();
 
 
                 try {
@@ -218,7 +219,7 @@ public class MainActivity extends AppCompatActivity implements TestListener {
                     // mTextview.setText("Hello Not Ok");
                 }
 
-                createAlarm("custom alarm", 21, 30);
+                //   createAlarm("custom alarm", 21, 30);
                 break;
         }
     }
@@ -246,8 +247,13 @@ public class MainActivity extends AppCompatActivity implements TestListener {
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
         mBuilder.setSmallIcon(android.R.drawable.ic_lock_lock);
+        mBuilder.setContentTitle("Notification Title");
+        mBuilder.setContentText("This is a sample notification content text");
+        mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText("This is a sample notification content text of big text style which would be completely visible by expanding the notification."));
+        mBuilder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_beach_access_black_24dp));
+        mBuilder.setColor(getResources().getColor(R.color.colorPrimary, getTheme()));
         Notification notification = mBuilder.build();
-        notification.bigContentView = r;
+        //   notification.bigContentView = r;
         mNotificationManager.notify(99, notification);
 
     }
